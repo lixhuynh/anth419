@@ -12,6 +12,22 @@ header {
   text-align: center;
 }
 
+article {
+  margin: 30px 0px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-width: 500px;
+}
+
+.intro p {
+  padding: 0px 100px;
+}
+
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -30,7 +46,7 @@ header {
 }
 
 .tl-container {
-  padding: 10px 40px;
+  padding: 10px 20px;
   position: relative;
   background-color: inherit;
   width: 50%;
@@ -57,67 +73,19 @@ header {
   left: 50%;
 }
 
-.tl-container-left::before, .tl-container-right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  border: medium solid white;
-}
-
-.tl-container-left::before {
-  right: 30px;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-
-.tl-container-right::before {
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-
 .tl-container-right::after {
   left: -16px;
 }
 
 .tl-content {
-  padding: 20px 30px;
-  background-color: white;
+  padding: 0px 30px;
   position: relative;
-  border-radius: 6px;
 }
 
-.tl-content * {
-  color: black;
+.tl-container-left .tl-content h2 {
+  text-align: right;
 }
 
-@media screen and (max-width: 600px) {
-  .timeline::after {
-    left: 31px;
-  }
-
-  .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
-
-  .container::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-
-  .left::after, .right::after {
-    left: 15px;
-  }
-
-  .right {
-    left: 0%;
-  }
+.tl-content p {
+  text-align: justify;
 }
