@@ -13,25 +13,31 @@ header {
 }
 
 article {
-  margin: 30px 0px;
+  margin: 50px;
 }
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  max-width: 500px;
+.intro {
+  display: flex;
+  text-align: center;
+  align-items: center;
 }
 
-.intro p {
-  padding: 0px 100px;
+.intro aside {
+  padding: 0px 25px;
+  margin-right: 50px;
+  flex: 1;
+}
+
+.intro img {
+  width: 200px;
+  height: 310px;
 }
 
 .timeline {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  display: none;
 }
 
 .timeline::after {
