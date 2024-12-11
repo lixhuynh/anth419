@@ -49,6 +49,11 @@ ul li .descr img {
   object-fit: cover;
 }
 
+ul li .descr figcaption {
+  text-align: center;
+  font-style: italic;
+}
+
 /* date */
 ul li .date {
   --dateH: 3rem;
