@@ -14,26 +14,27 @@ h1, h2 {
   margin: 30px 0px 0px 0px;
 }
 
-li, p {
+li, p, figcaption {
   font-family: sans-serif;
   line-height: 1.6em;
 }
 
 figure {
-  float: right;
   background-color: #f8f9fa;
   border: 1px solid #a7aeb5;
+}
+
+#intro figure {
+  float: right;
   padding: 10px;
   margin: 10px 0px 0px 40px;
-}
-
-figure img {
-  max-width: 225px;
-}
-
-figure p {
-  margin: 0px;
+  align-items: center;
   text-align: center;
+}
+
+#intro figure * {
+  max-width: 225px;
+  margin: 0px;
 }
 
 hr {
