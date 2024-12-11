@@ -1,97 +1,24 @@
-* {
-  box-sizing: border-box;
+:root {
+  --color-base: #202122;
+  --border-color-base: #a2a9b1;
 }
 
 body {
-  background-color: #C6CDD3;
-  color: #2D333A;
+  color: var(--color-base);
+  margin: 20px;
+}
+
+h1, h2 {
+  font-family: "Linux Libertine";
+  font-weight: normal;
+  margin: 30px 0px 0px 0px;
+}
+
+p, li {
   font-family: sans-serif;
+  line-height: 1.6em;
 }
 
-header {
-  text-align: center;
-}
-
-article {
-  margin: 50px;
-}
-
-.intro {
-  display: flex;
-  text-align: center;
-  align-items: center;
-}
-
-.intro aside {
-  padding: 0px 25px;
-  margin-right: 50px;
-  flex: 1;
-}
-
-.intro img {
-  width: 200px;
-  height: 310px;
-}
-
-.timeline {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: none;
-}
-
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: #434D57;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-
-.tl-container {
-  padding: 10px 0px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-
-.tl-container::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid #434D57;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.tl-container-left {
-  left: 0;
-}
-
-.tl-container-right {
-  left: 50%;
-}
-
-.tl-container-right::after {
-  left: -16px;
-}
-
-.tl-content {
-  padding: 0px;
-  position: relative;
-}
-
-.tl-container-left .tl-content h2 {
-  text-align: right;
-}
-
-.tl-content p {
-  text-align: justify;
+hr {
+  margin: 0px;
 }
