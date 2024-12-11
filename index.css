@@ -52,7 +52,7 @@ article {
 }
 
 .tl-container {
-  padding: 10px 20px;
+  padding: 10px 0px;
   position: relative;
   background-color: inherit;
   width: 50%;
@@ -84,7 +84,7 @@ article {
 }
 
 .tl-content {
-  padding: 0px 30px;
+  padding: 0px;
   position: relative;
 }
 
